@@ -1,0 +1,57 @@
+<!--
+<iframe width="720" height="480" src="https://www.youtube.com/embed/Q-VlYyG4ayE?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" dark_theme=1 allowfullscreen></iframe>
+<iframe width="720" height="600" src="https://www.youtube.com/live_chat?v=Q-VlYyG4ayE&embed_domain=incrte.tommyhsu.com" frameborder="0" allow="autoplay; encrypted-media" dark_theme=1 allowfullscreen></iframe>
+-->
+<html>
+<head>
+<title>無限盃~手牽手大進擊</title>
+<LINK REL="SHORTCUT ICON" HREF="/favicon.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<style>
+#wrapper {
+    max-width: 100%;
+	padding:0px 50px;
+    overflow: hidden;
+}
+#live_stream {
+    width: 60%;
+	max-width:1120px;
+	min-height:480px;
+    float:left;
+	padding:0px 10px 0px 0px;
+}
+#live_chat {
+    overflow: hidden;
+}
+@media screen and (max-width: 1280px) {
+ #live_stream { 
+    float: none;
+    margin-right:0;
+    width:auto;
+  }
+}
+</style>
+</head>
+<body style="background-color:#212121">
+<div id="wrapper">
+<div id="live_stream">
+<iframe width="100%" height="65%" src="https://www.youtube.com/embed/I5-maP1sa_E?autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" dark_theme=1 allowfullscreen></iframe>
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT4sepKaq2WWgaSD42-l3NiYyIzsqblZj1QRt8Ig74Z1L3LLxZPEdA30NUUAllBARddGzeaKfdvv21h/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" width="100%" height="35%" id="result_frame"></iframe>
+<script>
+window.setInterval("reloadIFrame();", 30000);
+
+function reloadIFrame() {
+ var frameHolder=document.getElementById('result_frame');
+frameHolder.src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT4sepKaq2WWgaSD42-l3NiYyIzsqblZj1QRt8Ig74Z1L3LLxZPEdA30NUUAllBARddGzeaKfdvv21h/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"
+}
+</script>
+</div>
+<div id="live_chat">
+<iframe width="100%" height="100%" src="https://www.youtube.com/live_chat?v=I5-maP1sa_E&embed_domain=incrte.tommyhsu.com" frameborder="0" allow="autoplay; encrypted-media" dark_theme=1 allowfullscreen></iframe>
+</div>
+<div>
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTMGgtIQdkBJWnB55TkkZpWhK4Tl1UocRU4IDE6V1egN10usJp3ju15mDwz1B6sRP4DemLt5PMibO9T/pubhtml?widget=true&amp;headers=false" width="100%" height="35%" id="result_frame"></iframe>
+</div>
+</div>
+</body>
+</html>
